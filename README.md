@@ -1,5 +1,5 @@
 # When Fariness Meets Personality
-The code generates and compares music and movie recommendations for differing sensitive attributes using Gemini 1.5 Flash using the FaiRLLM benchmak by Zhang et al. You can find their paper here: https://arxiv.org/abs/2305.07609 and their code here: https://github.com/jizhi-zhang/FaiRLLM. Huge thank you to Zhang et al!
+The code generates and compares music and movie recommendations for differing sensitive attributes using Gemini 1.5 Flash and OpenAI-GPT 4o using the FaiRLLM benchmak by Zhang et al. You can find their paper here: https://arxiv.org/abs/2305.07609 and their code here: https://github.com/jizhi-zhang/FaiRLLM. Huge thank you to Zhang et al!
 
 run run_music.sh or run_movie.sh respectively.
 
@@ -23,7 +23,7 @@ done
 sst is the sensitive attribute, can be age, country, gender, continent, occupation, race, religion, physics.
 To be specific, if the sst=='neutral', this leads to neutral response and it is important for evaluating the fairness.
 
-If you want to evaluate the fairness of Gemini 1.5 Flash using the generated data from Gemini 1.5 Flash, you can use process.ipynb
+If you want to evaluate the fairness of Gemini 1.5 Flash or OpenAI GPT-4o using the generated data, you can use process.ipynb
 Before using process.ipynb, please check the following in the begining of process.ipynb:
 
 ```
